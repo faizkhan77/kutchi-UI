@@ -563,17 +563,19 @@ video {
 
 
 
+/* ----------------------------------navbar----------------------------------------------- */
+
 
 nav {
   position: absolute;
-  top: 20px;
+  top: 60px;
   /* Adjust this value as needed */
-  left: 50%;
+  left: 45%;
   /* Center the nav horizontally */
   transform: translateX(-50%);
   width: 43.3vw;
   height: 50px;
-  background-color: #34495e;
+  background: transparent;
   border-radius: 8px;
   font-size: 0;
   z-index: 10;
@@ -590,7 +592,7 @@ nav .nava {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: white;
+  color: darkblue;
   cursor: pointer;
 }
 
@@ -708,16 +710,21 @@ span {
 @media screen and (max-width: 480px) {
   nav {
     max-width: 300px;
-    font-size: 10px;
+    font-size: 20px;
+    position: absolute;
+    /* Adjust this value as needed */
+    left: 50%;
     /* Font size for mobile */
   }
 
-  nav a {
-    font-size: 8px;
+  nav .nava {
+    font-size: 10px;
     /* Font size for mobile menu items */
   }
 
   nav .animation {
+    transition: all .5s ease 0s;
+
     width: calc(20% - 10px);
   }
 }
